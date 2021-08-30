@@ -1,4 +1,4 @@
-# 18258
+# 18258 : 큐 2
 
 from collections import deque
 import sys  
@@ -8,7 +8,8 @@ deq = deque()
 n = int(input())
 
 for i in range(n) :
-  op = list(map(str, input().split()))
+  op = input().split()  # list(map()) 사용하면 시간 초과 에러
+  print(op)
   if op[0] == "push" :
     deq.append(int(op[1]))
   elif op[0] == "pop" :

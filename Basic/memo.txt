@@ -56,7 +56,3 @@ ex) .length (x)
 ex) 소수점 자리수 맞출 때 : '{05.2f}'.format(a)
                                      or 
                              format(a, '05.2f')
-
-[ 문제 D : 2839 ]
-
-

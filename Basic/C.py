@@ -1,4 +1,5 @@
-# 4344
+# 4344 : 평균은 넘겠지
+
 import math
 c = int(input())
 
