@@ -11,10 +11,11 @@ li = []
 for i in range(k) :
   num = int(input())
   if num == 0 :
-    li.remove(li[len(li)-1])
+    li.pop(li[len(li)-1]) # remove 쓸 때 중복된 값 중 첫 번째 숫자만 제거된다는 것 주의
   else :
     li.append(num)
 
-for i in range(len(li)) :
-  sum += li[i]
-print(sum)
+#for i in range(len(li)) :
+ # sum += li[i]
+print(sum(li))
+sum(li)
