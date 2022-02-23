@@ -46,3 +46,27 @@
 * 번외) 리스트 요소를 한 줄에 하나씩 출력하는 방법 => for x in list : 
                                                         print x
 
+[ 문제 1158 ]
+
+* 데크 (deque)
+-> 앞, 뒤 양쪽 방향에서 element 추가 및 삭제 가능
+-> 일반적인 리스트는 O(n), 데크는 O(1) 로 접근 가능
+
+- from collections import deque
+
+* 데크 메서드
+- deque.append(item) : 데크의 오른쪽 끝에 item 삽입
+- deque.apppendleft(item) : 데크의 왼쪽 끝에 item 삽입
+- deque.pop() : 데크의 오른쪽 끝 요소를 반환하는 동시에 데크에서 삭제
+- deque.popleft() : 데크의 왼쪽 끝 요소를 반환하는 동시에 데크에서 삭제
+- deque.remove(item) : 데크에서 item 을 찾아서 삭제
+- deque.extend(array) : 주어진 배열을 순회하면서 데크의 오른쪽에 추가
+- deque.extendleft(array) : 주어진 배열을 순회하면서 데크의 왼쪽에 추가
+- deque.rotate(num) : 데크를 num 만큼 회전 (양수이면 오른쪽으로, 음수이면 왼쪽으로)
+
+* 문자열 메서드 join
+-> '구분자'.join(리스트)
+-> 매개변수로 들어온 리스트에 있는 요소 하나하나를 합쳐서 하나의 문자열로 바꾸어 반환하는 함수
+
+ex) ''.join(['a', 'b', 'c'])   => abc
+    '_'.join(['a', 'b', 'c'])  => a_b_c
