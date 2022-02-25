@@ -10,7 +10,7 @@ b.sort()                      # b : 오름차순 정렬
 result = 0
 
 for i in range(n) :           # n 만큼 반복
-  result += (a[i] * b[i])     # 내림차순 정렬된 
+  result += (a[i] * b[i])     # 내림차순 정렬된 a 의 원소 * 오름차순 정렬된 b의 원소
   
 print(result)
 
