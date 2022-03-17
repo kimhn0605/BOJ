@@ -1,4 +1,4 @@
-# 과자
+# 10156 : 과자
 
 k, n, m = map(int, input().split())
 result = k * n - m
