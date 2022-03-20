@@ -1,0 +1,17 @@
+[ 문제 1764 ]
+
+* 새로운 비어있는 집합 (set) 객체 생성
+  ex) s = set()
+
+* 집합 (set) 메서드
+  - set.add(값) : 요소 추가 -> 중복값 넣으면 무시 
+  - set.update(값) : 요소 여러 개 추가 -> [] 또는 {} 로 감싸서 값 추가 
+  - set.remove(값) : 요소 제거 -> 지우려는 요소 없으면 KeyError 발생
+  - set.discard(값) : 요소 제거 -> 지우려는 요소가 없어도 에러 없이 정상 종료
+  - set.pop() : 맨 앞에 있는 요소 반환 후 제거 -> 빈 상태에서 호출하면 에러 발생
+  - set.clear() : 모든 요소 제거 
+  - set in : 내부에 요소 있는지 확인
+
+* set 합집합 : | 또는 union 함수
+  set 교집합 : & 또는 intersection 함수
+  set 차집합 : - 또는 difference 함수
