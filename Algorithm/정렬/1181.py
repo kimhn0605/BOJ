@@ -1,5 +1,28 @@
 # 1181 : 단어 정렬
 
+# 방법 1 : 사전 순으로 정렬 후 길이 비교
+import operator                 # 딕셔너리의 value값 기준으로 정렬하기 위해 operator 임포트
+
+n = int(input())                # n 입력받기
+li = {}                         # 딕셔너리형 변수 li 선언
+
+for _ in range(n) :
+  word = input()                # 입력받은 단어 word 변수에 저장
+  li[word] = len(word)          # {단어 : 단어 길이} 형태로 딕셔너리에 저장
+
+li = dict(sorted(li.items()))   # 우선 단어를 사전 순으로 먼저 정렬
+
+# 단어를 사전 순으로 정렬한 이후에 길이 순으로 정렬
+# operator.itemgetter(1) : 아이템의 1번째 인덱스, 즉 딕셔너리의 value 값을 정렬 기준으로 삼겠다는 의미
+sorted_dict = dict(sorted(li.items(), key=operator.itemgetter(1)))
+
+for i in sorted_dict.keys() :
+  print(i)                      # 키 값만 출력
+
+# 길이로 먼저 정렬하면 나중에 sorted() 사용 시 
+# 길이 상관없이 사전 순으로 다시 정렬되기 때문에 사전 순서로 먼저 정렬
+
+# 방법 2 : 길이 비교 후 사전 순으로 정렬
 n = int(input())              # n 입력받기
 li = {}                       # 딕셔너리형 변수 li 선언
 result = []                   # 정렬된 원소 담을 result 리스트 선언
