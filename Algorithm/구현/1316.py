@@ -1,5 +1,25 @@
 # 1316 : 그룹 단어 체커
 
+# 방법 1 
+n = int(input())         # n 입력받기
+group_word = 0           # 그룹 단어 개수 세는 변수
+
+for _ in range(n):       # n 번만큼 반복
+    word = input()       # 단어 입력받기
+    error = 0            
+    
+    for index in range(len(word)-1):              # 인덱스 범위 생성 : 0 ~ 마지막 인덱스까지
+        if word[index] != word[index+1]:          # 연속된 두 문자가 다르다면
+            new_word = word[index+1:]             # 현재 글자 이후 문자열을 새로운 단어로 생성
+            if new_word.count(word[index]) > 0:   # 뒤에 남아있는 문자열에서 현재 글자가 있있다면
+                error += 1                        # error += 1
+                
+    if error == 0:          # error가 0 인 단어만
+        group_word += 1     # 그룹 단어 개수 += 1
+        
+print(group_word)           # 그룹 단어 개수 출력
+
+# 방법 2 
 n = int(input())            # n 입력받기
 group_word_count = 0        # 그룹 단어 개수 세는 변수
 
