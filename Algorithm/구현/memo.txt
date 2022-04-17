@@ -17,3 +17,11 @@
 * 문자열의 특정 인덱스 원소에 대해 del 연산 X
   ex) s = 'str'
       del s[1]    // (x)
+
+[ 문제 1475 ]
+
+* math 라이브러리 (import math)
+  - 반올림 함수 : math.round()
+  - 올림 함수 : math.ceil()
+  - 내림 함수 : math.floor()
+  - 버림 함수 : math.trunc()
