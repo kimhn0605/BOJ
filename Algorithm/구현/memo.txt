@@ -48,3 +48,15 @@
 
 * 조합 nCr
  => n! / (r! * (n-r)!)
+
+[ 문제 17504 ]
+
+* 분수 표현 라이브러리
+- from fractions import fractions
+
+- numerator 속성 : 분자 출력
+- denominator 속성 : 분모 출력
+
+ex) f = Fraction(12, 8)     # 12/8 의미
+    print(f.numerator)      # 3
+    print(f.denominator)    # 2
