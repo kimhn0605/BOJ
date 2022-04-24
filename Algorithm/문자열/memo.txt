@@ -15,3 +15,8 @@
 * set 합집합 : | 또는 union 함수
   set 교집합 : & 또는 intersection 함수
   set 차집합 : - 또는 difference 함수
+
+[ 문제 1032 ]
+
+* 가장 긴 문자열 찾기
+  - max(list, key = len)
