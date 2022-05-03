@@ -52,3 +52,18 @@
           print("포함")
         else :
           print("미포함")
+
+[ 문제 9093 ]
+ 
+* reverse() 메서드 
+ - 리스트에서 제공하는 함수
+ - list 로 변환 후 list.reverse() 사용
+
+* reversed() 메서드 
+ - 리스트에서 제공하는 함수 x
+ - reversed object 을 반환하므로 join 함수 이용해서 문자열 반환
+  
+* join() 메서드 
+ - 리스트와 튜플 모두 문자열로 생성 가능
+  ex) li = ['a', 'b', 'c]
+      ''.join(li)     # abc
