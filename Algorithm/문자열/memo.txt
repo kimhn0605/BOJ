@@ -75,3 +75,9 @@
  - exit() 
  - sys.exit() 
  - os.exit()
+
+[ 문제 1969 ]
+
+* 빈도수 높은 값 찾기
+ - max(data, key = data.count)
+ - from collection import Counter 라이브러리 사용
