@@ -70,3 +70,17 @@
 
 ex) ''.join(['a', 'b', 'c'])   => abc
     '_'.join(['a', 'b', 'c'])  => a_b_c
+
+[ 문제 1927 ]
+
+* 최소힙 
+ - import heapq
+
+* 힙에 원소 추가
+ - heapq.heappush(원소 추가할 대상 리스트, 추가할 원소)
+
+* 힙에서 원소 삭제 (최솟값)
+ - heapq.heappop(원소 삭제할 대상 리스트)
+
+* 기존 리스트를 힙으로 변환
+ - heapq.heapify(기존 리스트)
